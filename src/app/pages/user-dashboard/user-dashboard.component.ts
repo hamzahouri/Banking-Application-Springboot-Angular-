@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { lightInfoInput } from 'src/app/components/light-info/light-info.component';
+import { FirstService } from 'src/app/services/first.service';
 
 @Component({
   selector: 'app-user-dashboard',
@@ -10,29 +11,14 @@ export class UserDashboardComponent implements OnInit {
 
   accountInfoList: Array<lightInfoInput> = []
 
-  constructor() { }
+  constructor(private service : FirstService) { }
 
   ngOnInit(): void {
     this.initializeAccountInfo();
   }
 
   private initializeAccountInfo() {
-    this.accountInfoList =[
-      {
-        title:'Account balance',
-        amount:213455,
-        infoStyle: 'text-bg-primary'
-      },
-      {
-        title:'Highest Transfert',
-        amount:23985,
-        infoStyle: 'text-bg-warning'
-      },{
-        title:'Highest Deposit',
-        amount:3498455,
-        infoStyle: 'text-bg-success'
-      }
-    ];
+    this.accountInfoList = this.service.initializeAccountInfo();
   }
 
 }

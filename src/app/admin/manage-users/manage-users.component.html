@@ -1,0 +1,64 @@
+<div class="p-3">
+    <h2>Bank Customers</h2>
+    
+    <div class="d-flex justify-content-end mb-3">
+        <div class="form-check form-switch">
+            <label class="form-check-label" for="flexSwitchCheckChecked">Show inactive users only</label>
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+          </div>
+    </div>
+    <table class="table table-bordred">
+        <thead>
+          <tr>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">IBAN</th>
+            <th scope="col">State</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td><span class="badge text-bg-success">Active</span></td>
+            <td class="cursor">
+                <div class="d-flex flex-row justify-content-start align-items-center">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="active-state" checked>
+                      </div>
+                    &nbsp; |&nbsp; <em class="fas fa-trash text-danger"></em>
+            </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td><span class="badge text-bg-warning">InActive</span></td>
+            <td class="cursor">
+                <div class="d-flex flex-row justify-content-start align-items-center">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="active-state" >
+                      </div>
+                    &nbsp; |&nbsp; <em class="fas fa-trash text-danger"></em>
+            </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td><span class="badge text-bg-warning">InActive</span></td>
+            <td class="cursor">
+                <div class="d-flex flex-row justify-content-start align-items-center">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="active-state" >
+                      </div>
+                    &nbsp; |&nbsp; <em class="fas fa-trash text-danger"></em>
+            </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>

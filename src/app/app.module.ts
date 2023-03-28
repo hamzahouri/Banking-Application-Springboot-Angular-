@@ -12,6 +12,10 @@ import { MyContactListComponent } from './pages/my-contact-list/my-contact-list.
 import { NewTransactionComponent } from './pages/new-transaction/new-transaction.component';
 import { NewContactComponent } from './pages/new-contact/new-contact.component';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { ManageUsersComponent } from './admin/manage-users/manage-users.component';
+import { AppRoutingModule } from './app-routing.module';
+import { MainAdminPageComponent } from './admin/main-admin-page/main-admin-page.component';
+import { AdminDashboardComponent } from './admin/admin-dashboard/admin-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -25,10 +29,14 @@ import { ProfileComponent } from './pages/profile/profile.component';
     MyContactListComponent,
     NewTransactionComponent,
     NewContactComponent,
-    ProfileComponent
+    ProfileComponent,
+    ManageUsersComponent,
+    MainAdminPageComponent,
+    AdminDashboardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
